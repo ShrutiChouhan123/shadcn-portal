@@ -1,4 +1,3 @@
-import * as React from "react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -11,16 +10,12 @@ import {
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+import { Navigation } from "./Navigation"
 
 export const Login=()=>{
   return (
+    <>
+    <Navigation />
     <Card className="w-[450px] my-8 mt-20 container mx-auto">
       <CardHeader>
         <CardTitle>Login</CardTitle>
@@ -44,5 +39,6 @@ export const Login=()=>{
         <Button>Login</Button>
       </CardFooter>
     </Card>
+    </>
   )
 }
